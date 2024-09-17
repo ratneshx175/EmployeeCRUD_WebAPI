@@ -22,6 +22,7 @@ namespace EmployeeCRUD.Controllers
             return Ok(allEmployees);
         }
 
+        [HttpPost]
         public async Task<ActionResult> AddEmployee(Employee vm)
         {
             await emp.SaveEmployee(vm);
